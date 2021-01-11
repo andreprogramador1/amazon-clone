@@ -9,7 +9,11 @@ return (
   <div className="app">
     <Router>
       <Switch>
-        <Route path="/" exact  component={Header} component={Home} />
+        
+        <Route path="/" exact>
+          <Header/>
+          <Home/>
+        </Route>
         
       </Switch>
     </Router>
