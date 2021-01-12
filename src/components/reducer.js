@@ -13,7 +13,7 @@ export const getBasketTotal = (basket) =>
         return {
           ...state,
           basket: [...state.basket, action.item]
-        }
+        }  
       default:
         return state;
     }
