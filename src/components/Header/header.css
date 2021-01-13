@@ -8,6 +8,10 @@
   z-index: 100;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header__logo {
   width: 100px;
   object-fit: contain;
@@ -23,16 +27,18 @@
 }
 
 .header__searchInput {
-  height: 12px;
+  height: 22px;
   padding: 10px;
   border: none;
   width: 100%;
+  border-radius: 3px 0 0 3px;
 }
 
 .header__searchIcon {
   padding: 5px;
   height: 22px !important;
   background-color: #cd9042;
+  border-radius: 0 3px 3px 0;
 }
 
 .header__optionLineOne {
