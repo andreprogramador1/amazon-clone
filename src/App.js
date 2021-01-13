@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Header from './components/Header'
 import Login from './components/Login'
 import Checkout from './components/Checkout'
+import Payment from './components/Payment'
 import { auth } from "./firebase";
 import { useStateValue } from "./components/stateProvider";
 
@@ -40,8 +41,13 @@ return (
           <Header/>
           <Home/>
         </Route>
+        <Route path="/payment" exact>
+          <Header/>
+          <Payment/>
+        </Route>
         <Route path='/login' component={Login}/>
         <Route path='/checkout' component={Checkout}/>
+        
       </Switch>
     </Router>
   </div>
