@@ -1,3 +1,7 @@
 .swiper-wrapper {
     width: 100vw;
 }
+
+.image {
+    width: -webkit-fill-available;
+}

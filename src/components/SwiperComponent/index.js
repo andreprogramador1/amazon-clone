@@ -20,16 +20,16 @@ function SwiperComponent() {
     return (
         <div className='swiper-container'>
             <Swiper
-            // spaceBetween={0}
+            spaceBetween={0}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+            // scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
             >
             {data.map((item, i) => (
-                <SwiperSlide><img src={item} /></SwiperSlide>
+                <SwiperSlide><img className='image' src={item} /></SwiperSlide>
             ))}
             </Swiper>
         </div>
